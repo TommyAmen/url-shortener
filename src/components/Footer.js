@@ -7,13 +7,13 @@ import logo from "../images/logo-footer.svg"
 export default function Footer() {
     return (
     <>
-        <footer className='bg-slate-900 py-15 lg:py-20'>
-            <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-5">
-                <article>
+        <footer className='bg-slate-900 py-24 md:py-15 lg:py-20'>
+            <div className="max-width text-center grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-5">
+                <article className='m-auto md:m-0'>
                     <img src={logo} alt="" />
                 </article>
 
-                <article>
+                <article className='mt-10 md:mt-0'>
                     <h3 className='text-white text-lg font-bold tracking-wide mb-3'>Features</h3>
                     <ul>
                         <li><button className='text-slate-200 text-small mt-1 hover:text-cyan-500 transition-all duration-300'>Link Shortening</button></li>
@@ -31,7 +31,7 @@ export default function Footer() {
                     </ul>
                 </article>
 
-                <article>
+                <article className='mb-10 md:mb-0'>
                     <h3 className='text-white text-lg font-bold tracking-wide mb-3'>Company</h3>
                     <ul>
                         <li><button className='text-slate-200 text-small mt-1 hover:text-cyan-500 transition-all duration-300'>About</button></li>
@@ -41,7 +41,7 @@ export default function Footer() {
                     </ul>
                 </article>
 
-                <article>
+                <article className='m-auto md:m-0'>
                     <ul className='flex items-center'>
                         <li><img src={facebook} alt="" /></li>
                         <li className='ml-5'><img src={twitter} alt="" /></li>

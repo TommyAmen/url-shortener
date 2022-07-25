@@ -33,9 +33,34 @@ p {
   height: 17.188rem;
 }
 
+.shorten {
+  background-color: hsl(257, 27%, 26%);
+  height: 10.5rem;
+  width: 90%;
+  margin: 0 auto;
+  @apply rounded-lg
+}
+
+.shorten img {
+  height: 10.5rem;
+  @apply rounded-lg w-full
+}
+
+.shorten .form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
 .boost img {
   height: 17.188rem;
   @apply w-full
+}
+
+.heading {
+  line-height: 1.2 !important;
 }
 
 .boost .boost-middle {
@@ -46,7 +71,7 @@ p {
 }
 
 .btn {
-  @apply bg-cyan-500 py-3 px-7 text-white hover:opacity-75 transition-all duration-300 cursor-pointer;
+  @apply bg-cyan-400 py-3 px-7 text-white hover:opacity-75 transition-all duration-300 cursor-pointer;
 }
 
 @media (min-width: 1024px) {
@@ -62,5 +87,6 @@ p {
     @apply bg-cyan-500 h-2 w-full absolute;
     top: 50%;
   }
+
   
 }

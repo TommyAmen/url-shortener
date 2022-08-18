@@ -2,7 +2,6 @@ import mobile from "../images/bg-shorten-mobile.svg"
 import desktop from "../images/bg-shorten-desktop.svg"
 import { useEffect, useState } from "react"
 
-// https://api.shrtco.de/v2/shorten?url=
 
 const getLocalLinks = () => {
     let links = localStorage.getItem('link')
@@ -36,7 +35,6 @@ export default function Shortener() {
         }
 
         if (!text) {
-            // alert("Text is empty")
         } else {
             const shorten = async () => {
                 const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${text}`)
@@ -52,7 +50,7 @@ export default function Shortener() {
 
     const handleChange = (e) => {
         setText(e.target.value)
-       console.log(text);
+        console.log(text);
     }
 
     const handleCopy = () => {

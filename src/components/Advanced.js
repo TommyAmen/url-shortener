@@ -11,7 +11,7 @@ export default function Advanced() {
                     <p className="text-center text-slate-400 text-md mb-10">Track how your links are performing across the web with <br /> our advanced statistics dashboard</p>
 
                     <div className="card grid gap-20 md:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-40 relative text-center md:text-left">
-                        <div className="ray bg-cyan-500 h-full w-2 absolute left-2/4 md:h-2 md:w-full md:left-0"></div>
+                        <div className="ray bg-cyan-500 h-full w-2 absolute left-[49.3%] md:h-2 md:w-full md:left-0"></div>
                         <article className="bg-white p-5 rounded relative">
                             <img src={brand} alt="" className="bg-slate-800 p-3 -mt-12 md:-mt-12 rounded-full m-auto md:m-0"/>
                             <h3 className="text-slate-800 font-bold mb-2 text-lg mt-10">Brand Recognition</h3>
